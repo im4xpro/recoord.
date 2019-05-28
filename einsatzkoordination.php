@@ -164,6 +164,9 @@ button a:hover{
   padding-top:1em;
 }
 
+#errorDiv{
+  display:none;
+}
 /***************** *******************/
 /***************** *******************/
 /***************** *******************/
@@ -277,6 +280,17 @@ button a:hover{
   }
 }
 
+@media(max-width:974px){
+  #mainBody{
+    display:none;
+  }
+  #console{
+    display: none;
+  }
+  #errorDiv{
+    display:block;
+  }
+}
 /***************** *******************/
 /***************** *******************/
 /***************** *******************/
@@ -333,7 +347,7 @@ button a:hover{
 <output id="list"></output>
 <br >
 <br>
-<button id="exitButton" name="exitButton" class="settingsButton"><a href="../jet.php">Einsatz beenden</a></button>
+<button id="exitButton" name="exitButton" class="settingsButton"><a href="index.php">Einsatz beenden</a></button>
 <script>
   function handleFileSelect(evt) {
     var files = evt.target.files; // FileList object
@@ -384,6 +398,7 @@ button a:hover{
 
   </p>
 </div>
+
 <script language="javascript" type="text/javascript">
 
 // Ausführen bei Mausklick
@@ -584,7 +599,7 @@ function findObjectCoords(mouseEvent)
            parentObject.appendChild(newElement);
            leereTextfeld();
 
-           document.getElementById("consoleText").innerHTML += consoleEvent()+" "+elementID+" wurde gesetzt. Art: "+status+".<br />";
+           document.getElementById("consoleText").innerHTML += consoleEvent()+" Der "+status+" "+elementID+" wurde neu gesetzt.<br />";
 
 
            markerSum.push(elementID);

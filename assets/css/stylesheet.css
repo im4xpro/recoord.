@@ -1,164 +1,22 @@
-/* This is the individual style for dlrg_anzeigepanel */
-/* written by Maximilian Kaiser 2019, all rights reserved */
 body{
   margin:0;
   padding:0;
-  font-weight:300;
 }
-.bg-mydark{
-  background-color:#D3D3D3;
-}
-.bg-myblue{
-  background-color:#12dff3;
-}
+#header{
 
-.bg-myred{
-  background-color: red;
-}
-.text-yellow{
-  color:yellow;
-}
-.text-yellow a{
-  color:yellow;
-}
-.navbar .fas{
-  color:yellow;
-}
-.navbar .far{
-  color:yellow;
-}
-#startseite{
-  border-top: 1px solid #696969;
-  background-image:url(../../source/img/logoDLRG.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#loginSec{
-  border-top: 1px solid #696969;
-}
-#userguideheader{
-  border-bottom: 1px solid #696969;
-  border-top: 1px solid #696969;
-}
-#kalenderSec{
-  border-top:1px solid #696969;
-}
-.startElement{
-width:100%;
-height:15em;
-margin-top:1.5em;
-opacity: 0.9;
--webkit-box-shadow: 0px 0px 13px -1px rgba(105,105,105,1);
--moz-box-shadow: 0px 0px 13px -1px rgba(105,105,105,1);
-box-shadow: 0px 0px 13px -1px rgba(105,105,105,1);
-
-}
-
-.startElementText{
   width:100%;
-  height:15%;
-  text-align:center;
-  margin-bottom: 0;
-  vertical-align: bottom;
-  padding-top:0.5%;
-  font-size:20px;
-}
-
-.imgDIV{
-  width:100%;
-  height:85%;
-  margin: 0;
-  padding:0;
-
-}
-.adminElement{
-  width:100%;
-  height:16em;
-  -webkit-box-shadow: 0px 0px 13px -1px rgba(105,105,105,1);
-  -moz-box-shadow: 0px 0px 13px -1px rgba(105,105,105,1);
-  box-shadow: 0px 0px 13px -1px rgba(105,105,105,1);
-  padding:1em;
-}
-
-.elementBorder{
-  border: 1px solid #696969;
-}
-
-#lauftextChange input{
-  margin-bottom: 0.5em;
-  margin-top: 1em;
-}
-
-#timeField{
-  position: absolute;
-  width:200px;
-  height:150px;
-  background-color: white;
-  text-align:center;
-  left:50%;
-  top:50%;
-  margin-left: -100px;
-  margin-top: -50px;
-
-}
-
-#timeField h1{
-  font-size:80px;
-  font-weight: 300;
-}
-#timeField h3{
-
-}
-.imgCenter{
-
-  position: absolute;
-  margin:auto;
-  top:8%;
-  bottom:0;
-  left:0;
-  right:0;
-
-}
-.row-no-padding{
+  height:auto;
   padding:0;
   margin:0;
-}
-
-.row-no-padding.col{
-  padding:0;
-  margin:0;
-}
-
-
-#loginbox{
-  width:15em;
-  height:10em;
-  position: absolute;
-  text-align: center;
-  padding-top:0.5em;
-  left:50%;
-  top:50%;
-  margin-top:-5em;
-  margin-left: -7.5em;
-  background-color: white;
-  border:1px solid lightgrey;
-}
-#loginbox input{
-  margin-top:0.3em;
-}
-
-
-#userguideheader h1{
-  font-size:90px;
-  font-weight:300;
-}
-
-#lauftextMarquee{
-  font-size:24px;
-  font-weight:300;
 
 }
 
-.nav-item .nav-link{
-  color:yellow;
+#header img{
+
+  border-bottom:3px solid red;
+
+}
+
+.color-red{
+  color:red;
 }
