@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/bootstrap.css"/>
   <link rel="stylesheet" href="assets/css/stylesheet.css"/>
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -20,19 +20,19 @@
         <div class="collapse navbar-collapse" id="recoordNav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Start</a>
+              <a class="nav-link" href="index.php#start">Start</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Funktionen</a>
+              <a class="nav-link" href="index.php#functions">Funktionen</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Einführung</a>
+              <a class="nav-link" href="#startguide">Einführung</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Nutzbarkeit</a>
+              <a class="nav-link" href="#usage">Nutzbarkeit</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Zukunft</a>
+              <a class="nav-link" href="#future">Zukunft</a>
             </li>
           </ul>
 
@@ -43,7 +43,7 @@
 </div>
 
 <div class="container-fluid mt-3">
-  <div class="container-fluid py-2 bg-light border-bottom">
+  <div class="container-fluid py-2 bg-light border-bottom" id="start">
     <p class="display-3 text-center mt-4">Einsatzkoordination neu definiert.</p><br>
       <p class="lead">
         Unser tägliches Leben besteht praktisch nurnoch aus Digitalisierung, das fängt schon bei der Guten-Morgen-App an
@@ -58,7 +58,7 @@
     </br>
   </div>
 
-  <div class="container-fluid py-2 bg-white border-bottom">
+  <div class="container-fluid py-2 bg-white border-bottom" id="functions">
     <p class="display-3 text-center mt-4">Die Funktionen</p><br>
       <p class="lead">
         <font color="red">recoord</font> hat im Prinzip nur den Sinn den Einsatz besser zu strukturieren oder
@@ -75,7 +75,7 @@
     </br>
   </div>
 
-  <div class="container-fluid py-2 bg-light border-bottom">
+  <div class="container-fluid py-2 bg-light border-bottom" id="startguide">
     <p class="display-3 text-center mt-4">Kurze Einführung</p><br>
       <p class="lead">
         Nun will ich Ihnen nur kurz - versprochen - die App erklären, bevor Sie loslegen können!<br>
@@ -98,19 +98,19 @@
     </div>
   </div>
 
-  <div class="container-fluid py-2 bg-white border-bottom">
+  <div class="container-fluid py-2 bg-white border-bottom" id="usage">
     <p class="display-3 text-center mt-4">Nutzbarkeit</p><br>
       <p class="lead">
-        <font color="red">recoord</font> lässt sich vielseitig einsetzen der Hauptverwendungszweck besteht jedoch in der
+        <font color="red">recoord</font> lässt sich vielseitig einsetzen, der Hauptverwendungszweck besteht jedoch in der
         Planung und Koordinierung von Einsätzen. Da das Programm aber sehr offen gestaltet ist lässt es sich auch nutzen um einfache Lagepläne zu erstellen.
-        <br><br><font color="red">Wichtig:</font> die App ist für ein Tablet oder einen PC optimiert, auf Smartphones kann nicht die nötige Fläche aufgebracht werden.
+        <br><br><font color="red">Wichtig:</font> Die App ist für ein Tablet oder einen PC optimiert, auf Smartphones kann nicht die nötige Fläche aufgebracht werden.
 
       </p>
     </br>
 
   </div>
 
-  <div class="container-fluid py-2 bg-light">
+  <div class="container-fluid py-2 bg-light" id="future">
     <p class="display-3 text-center mt-4">Zukunft</p><br>
       <p class="lead">
         <font color="red">recoord</font> soll nicht nur ein "Grundgerüst" für eine Einsatzkoordination bleiben, sondern vielmehr eine
@@ -124,7 +124,11 @@
     </br>
 
   </div>
+  <div class="container-fluid py-2 bg-light text-center">
+    <a href="#"><i class="fas fa-chevron-up" style="font-size:200%; color:black;"></i></a><br>
 
+
+  </div>
 
 </div>
 <div class="container-fluid py-5" style="background-color:red;">
