@@ -34,6 +34,12 @@
             <li class="nav-item">
               <a class="nav-link" href="#future">Zukunft</a>
             </li>
+            <div class="" style="width:100%; height:auto; margin-left:1em; text-align: right;; ">
+              <li class="nav-item">
+              <a class="nav-link" href="https://github.com/iMaxPro/recoord."><i class="fab fa-github" style="font-size:150%"></i></a>
+              </li>
+            </div>
+
           </ul>
 
         </div>
