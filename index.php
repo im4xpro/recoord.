@@ -16,7 +16,7 @@
 </div>
 
 <div class="container-fluid mt-3">
-  <div class="container py-2 bg-light border-bottom">
+  <div class="container-fluid py-2 bg-light border-bottom">
     <p class="display-3 text-center mt-4">Einsatzkoordination neu definiert.</p><br>
       <p class="lead">
         Unser tägliches Leben besteht praktisch nurnoch aus Digitalisierung, das fängt schon bei der Guten-Morgen-App an
@@ -31,7 +31,7 @@
     </br>
   </div>
 
-  <div class="container py-2 bg-white border-bottom">
+  <div class="container-fluid py-2 bg-white border-bottom">
     <p class="display-3 text-center mt-4">Die Funktionen</p><br>
       <p class="lead">
         <font color="red">Einsatzkoordination digital</font> hat im Prinzip nur den Sinn den Einsatz besser zu strukturieren oder
@@ -48,29 +48,30 @@
     </br>
   </div>
 
-  <div class="container py-2 bg-light border-bottom">
+  <div class="container-fluid py-2 bg-light border-bottom">
     <p class="display-3 text-center mt-4">Kurze Einführung</p><br>
       <p class="lead">
         Nun will ich Ihnen nur kurz - versprochen - die App erklären, bevor Sie loslegen können!<br>
         <br/>
         Schritt 1: Karte auswählen - das funktioniert ganz einfach über den Button "Datei auswählen".<br/>
+        (alternativ : Im Eingabefeld "maptdf1" eingeben und anschließend auf den Button "Karte ändern" drücken!)<br/>
         Schritt 2: Kategorie auswählen - es stehen insgesamt 5 Kategorien zur Auswahl!<br/>
         Schritt 3: Truppname mittels Nummerntasten eingeben oder in das Eingabefeld schreiben<br/>
         Schritt 4: auf eine Stelle in der Karte tippen, und schon haben Sie einen Trupp erstellt!<br/>
         <br/>
-        Neu setzen: Auf den Trupp klicken und er entfernt sich, dann wieder auf die Karte tippen!<br/>
+        Neu setzen: Auf den Trupp (oder Button unter der Karte) klicken und er entfernt sich, dann wieder auf die Karte tippen!<br/>
         Löschen: Auf den Trupp klicken und auf AC im Nummernblock tippen, fertig.<br/>
 
       </p>
     </br>
-    <div class="container py-2 bg-light text-center">
+    <div class="container-fluid py-2 bg-light text-center">
 
         <a href="einsatzkoordination.php"><button class="btn"  style="width:20em; height:5em; background-color:red; color:yellow">Hier geht's zur Einsatzkoordination</button></a>
       </br>
     </div>
   </div>
 
-  <div class="container py-2 bg-white border-bottom">
+  <div class="container-fluid py-2 bg-white border-bottom">
     <p class="display-3 text-center mt-4">Nutzbarkeit</p><br>
       <p class="lead">
         <font color="red">Einsatzkoordination digital</font> lässt sich vielseitig einsetzen der Hauptverwendungszweck besteht jedoch in der
@@ -82,7 +83,7 @@
 
   </div>
 
-  <div class="container py-2 bg-light">
+  <div class="container-fluid py-2 bg-light">
     <p class="display-3 text-center mt-4">Zukunft</p><br>
       <p class="lead">
         <font color="red">Einsatzkoordination digital</font> soll nicht nur ein "Grundgerüst" für eine Einsatzkoordination bleiben, sondern vielmehr eine
