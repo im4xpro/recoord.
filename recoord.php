@@ -19,6 +19,7 @@
   height:auto;
   margin: 0;
   padding:0;
+
 }
 h2{
   font-weight:400;
@@ -305,7 +306,7 @@ button a:hover{
 
   </div>
   <div id="truppBox">
-    <h2 >Einsatzkoordination</h2>
+    <h2 >recoord.</h2>
     <span class="markers" id="placeholderEinsatz"></span>
 
     <div id="buttonsEingabe">
@@ -667,7 +668,7 @@ function main(){
   leereTextfeld()
   truppName = "";
   var path = "source/";
-  var imageSrc = path+"startbild.png";
+  var imageSrc = path+"template_recoord.png";
   document.getElementById("karte").src = imageSrc;
 
 // prüft die Breite des Fensters
