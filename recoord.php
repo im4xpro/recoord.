@@ -165,9 +165,7 @@ button a:hover{
   padding-top:1em;
 }
 
-#errorDiv{
-  display:none;
-}
+
 /***************** *******************/
 /***************** *******************/
 /***************** *******************/
@@ -288,9 +286,7 @@ button a:hover{
   #console{
     display: none;
   }
-  #errorDiv{
-    display:block;
-  }
+
 }
 /***************** *******************/
 /***************** *******************/
@@ -401,6 +397,75 @@ button a:hover{
 </div>
 
 <script language="javascript" type="text/javascript">
+//****************************************************************
+// Main-Script, führt sich bei Seitenload aus
+function main(){
+  document.getElementById("consoleText").innerHTML += consoleEvent()+" Einsatz gestartet. <br />";
+
+  leereTextfeld()
+  truppName = "";
+  var path = "source/";
+  var imageSrc = path+"template_recoord.png";
+  document.getElementById("karte").src = imageSrc;
+
+// prüft die Breite des Fensters
+// vergibt entweder onclick(für PC) oder ontouchstart(Tablet)
+  var screenWidth = document.body.offsetWidth;
+  if(screenWidth < 1200){
+
+    document.getElementById("n9").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("n8").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("n7").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("n6").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("n5").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("n4").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("n3").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("n2").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("n1").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("n0").setAttribute("ontouchstart", "truppEingabe(this.id)");
+
+    document.getElementById("slashButton").setAttribute("ontouchstart", "truppEingabe(this.id)");
+    document.getElementById("acButton").setAttribute("ontouchstart", "truppEingabe(this.id)");
+
+    document.getElementById("elSetzen").setAttribute("ontouchstart", "setzeEinsatzleiter()");
+    document.getElementById("trSetzen").setAttribute("ontouchstart", "setzeTrupp()");
+    document.getElementById("fzSetzen").setAttribute("ontouchstart", "setzeFahrzeug()");
+    document.getElementById("GesSetzen").setAttribute("ontouchstart", "setzeMisterX()");
+    document.getElementById("GebSetzen").setAttribute("ontouchstart", "setzeGebäude()");
+
+
+    document.getElementById("changeMapButton").setAttribute("ontouchstart", "changeMap()");
+    document.getElementById("helpButton").setAttribute("ontouchstart", "WriteConsoleLog()");
+
+
+  }else{
+
+    document.getElementById("n9").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("n8").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("n7").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("n6").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("n5").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("n4").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("n3").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("n2").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("n1").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("n0").setAttribute("onclick", "truppEingabe(this.id)");
+
+    document.getElementById("slashButton").setAttribute("onclick", "truppEingabe(this.id)");
+    document.getElementById("acButton").setAttribute("onclick", "truppEingabe(this.id)");
+
+    document.getElementById("elSetzen").setAttribute("onclick", "setzeEinsatzleiter()");
+    document.getElementById("trSetzen").setAttribute("onclick", "setzeTrupp()");
+    document.getElementById("fzSetzen").setAttribute("onclick", "setzeFahrzeug()");
+    document.getElementById("GesSetzen").setAttribute("onclick", "setzeMisterX()");
+    document.getElementById("GebSetzen").setAttribute("onclick", "setzeGebäude()");
+
+    document.getElementById("changeMapButton").setAttribute("onclick", "changeMap()");
+    document.getElementById("helpButton").setAttribute("onclick", "WriteConsoleLog()");
+
+
+  }
+}
 
 // Ausführen bei Mausklick
 document.getElementById("objectBox").onmousedown = findObjectCoords;
@@ -409,43 +474,38 @@ document.getElementById("objectBox").onmousedown = findObjectCoords;
 // Truppname setzen
 var truppName = "";
 function truppEingabe(id){
-  leereTextfeld();
-  var num;
+
   var eingabeButton = id;
   switch(id){
-    case "n1": num = 1;
+    case "n1": truppName+= 1;
     break;
-    case "n2": num = 2;
+    case "n2": truppName+= 2;
     break;
-    case "n3": num = 3;
+    case "n3": truppName+= 3;
     break;
-    case "n4": num = 4;
+    case "n4": truppName+= 4;
     break;
-    case "n5": num = 5;
+    case "n5": truppName+= 5;
     break;
-    case "n6": num = 6;
+    case "n6": truppName+= 6;
     break;
-    case "n7": num = 7;
+    case "n7": truppName+= 7;
     break;
-    case "n8": num = 8;
+    case "n8": truppName+= 8;
     break;
-    case "n9": num = 9;
+    case "n9": truppName+= 9;
     break;
-    case "n0": num = 0;
+    case "n0": truppName+= 0;
+    break;
+    case "acButton": truppName = ""; leereTextfeld();
+    break;
+    case "slashButton": truppName+="/";
     break;
   }
-  if(id == "okButton"){
-  window.alert(truppName);
-  }else if(id == "acButton"){
-    truppName = "";
-    leereTextfeld();
-  }else if(id == "slashButton"){
-    truppName+="/";
 
-  }else{
-    truppName+=num;
 
-  }
+
+
 document.getElementById("eingabeFeld").value = truppName;
 }
 //****************************************************************
@@ -600,7 +660,7 @@ function findObjectCoords(mouseEvent)
            parentObject.appendChild(newElement);
            leereTextfeld();
 
-           document.getElementById("consoleText").innerHTML += consoleEvent()+" Der "+status+" "+elementID+" wurde neu gesetzt.<br />";
+           document.getElementById("consoleText").innerHTML += consoleEvent()+" "+status+" "+elementID+" wurde neu gesetzt.<br />";
 
 
            markerSum.push(elementID);
@@ -659,75 +719,6 @@ function changeMap(){
   leereTextfeld();
   document.getElementById("consoleText").innerHTML += consoleEvent()+ " Karte wurde zu '"+picName+"' geändert.<br />";
 
-}
-//****************************************************************
-// Main-Script, führt sich bei Seitenload aus
-function main(){
-  document.getElementById("consoleText").innerHTML += consoleEvent()+" Einsatz gestartet. <br />";
-
-  leereTextfeld()
-  truppName = "";
-  var path = "source/";
-  var imageSrc = path+"template_recoord.png";
-  document.getElementById("karte").src = imageSrc;
-
-// prüft die Breite des Fensters
-// vergibt entweder onclick(für PC) oder ontouchstart(Tablet)
-  var screenWidth = document.body.offsetWidth;
-  if(screenWidth < 1200){
-
-    document.getElementById("n9").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("n8").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("n7").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("n6").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("n5").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("n4").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("n3").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("n2").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("n1").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("n0").setAttribute("ontouchstart", "truppEingabe(this.id)");
-
-    document.getElementById("slashButton").setAttribute("ontouchstart", "truppEingabe(this.id)");
-    document.getElementById("acButton").setAttribute("ontouchstart", "truppEingabe(this.id)");
-
-    document.getElementById("elSetzen").setAttribute("ontouchstart", "setzeEinsatzleiter()");
-    document.getElementById("trSetzen").setAttribute("ontouchstart", "setzeTrupp()");
-    document.getElementById("fzSetzen").setAttribute("ontouchstart", "setzeFahrzeug()");
-    document.getElementById("GesSetzen").setAttribute("ontouchstart", "setzeMisterX()");
-    document.getElementById("GebSetzen").setAttribute("ontouchstart", "setzeGebäude()");
-
-
-    document.getElementById("changeMapButton").setAttribute("ontouchstart", "changeMap()");
-    document.getElementById("helpButton").setAttribute("ontouchstart", "WriteConsoleLog()");
-
-
-  }else{
-
-    document.getElementById("n9").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("n8").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("n7").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("n6").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("n5").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("n4").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("n3").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("n2").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("n1").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("n0").setAttribute("onclick", "truppEingabe(this.id)");
-
-    document.getElementById("slashButton").setAttribute("onclick", "truppEingabe(this.id)");
-    document.getElementById("acButton").setAttribute("onclick", "truppEingabe(this.id)");
-
-    document.getElementById("elSetzen").setAttribute("onclick", "setzeEinsatzleiter()");
-    document.getElementById("trSetzen").setAttribute("onclick", "setzeTrupp()");
-    document.getElementById("fzSetzen").setAttribute("onclick", "setzeFahrzeug()");
-    document.getElementById("GesSetzen").setAttribute("onclick", "setzeMisterX()");
-    document.getElementById("GebSetzen").setAttribute("onclick", "setzeGebäude()");
-
-    document.getElementById("changeMapButton").setAttribute("onclick", "changeMap()");
-    document.getElementById("helpButton").setAttribute("onclick", "WriteConsoleLog()");
-
-
-  }
 }
 
 //****************************************************************
