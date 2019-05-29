@@ -1,9 +1,9 @@
-# einsatzkoordination_digital
+# recoord.
 
 Schluss mit verwischten Whiteboard-Skripts und leeren Kugelschreibern!
 Auch Hilfsorganisationen sollten mit der Zeit gehen und digitale Lösungen verwenden.
 
-Wofür ist EINSATZKOORDINATION digital ?
+Wofür ist recoord?
 -
 Die App dient dazu, den laufenden Einsatz zu verwalten oder einen Beispieleinsatz darzustellen. Wo man früher ein Whiteboard oder einen Block verwendet hat nutzt man heute die digitale Version am Tablet oder am PC.
 
@@ -22,12 +22,12 @@ Kurzer Überblick über die Funktionen:
 
 - die Console schreibt die Events mit; eigene Consolentexte mittels Eingabefeld
 
-Für wen ist EINSATZKOORDINATION digital geeignet?
+Für wen ist recoord geeignet?
 -
 
 Für alle Hilfsorganisationen, die ihre Einsätze oder Events strukturieren wollen!
 
 ! Wichtig
 -
-Die App befindet sich noch in der Testphase, solltest du einen Fehler finden teile ihn mir mit, damit EINSATZKOORDIANTION digital noch besser wird!
+Die App befindet sich noch in der Testphase, solltest du einen Fehler finden teile ihn mir mit, damit recoord noch besser wird!
 
