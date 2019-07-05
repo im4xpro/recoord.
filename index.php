@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
   <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="source/logo.jpg" style="width:3.5em; "/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#recoordNav" aria-controls="recoordNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,11 +37,11 @@
             <li class="nav-item">
               <a class="nav-link" href="#future">Zukunft</a>
             </li>
-            <div class="" style="width:100%; height:auto; margin-left:1em; text-align: right;; ">
-              <li class="nav-item">
-              <a class="nav-link" href="https://github.com/iMaxPro/recoord."><i class="fab fa-github" style="font-size:150%"></i></a>
-              </li>
-            </div>
+
+            <li class="nav-item">
+            <a class="nav-link" href="https://github.com/iMaxPro/recoord."><i class="fab fa-github" style="font-size:150%"></i></a>
+            </li>
+
 
           </ul>
 
@@ -120,7 +123,7 @@
     <p class="display-3 text-center mt-4">Zukunft</p><br>
       <p class="lead">
         <font color="red">recoord</font> soll nicht nur ein "Grundgerüst" für eine Einsatzkoordination bleiben, sondern vielmehr eine
-        App für Hilfsorganisationen um im Ernstfall bestens organisiert zu sein. Mit dem Vorbild GeoKAT (App für den Katastrophenschutz) sollen in Zukunft Standortangepasste Karten auswählbar sein,
+        App für Hilfsorganisationen um im Ernstfall bestens organisiert zu sein. Mit dem Vorbild GeoKAT (App für den Katastrophenschutz) sollen in Zukunft standortangepasste Karten auswählbar sein,
         auf denen wichtige Punkte für Hilfsorganisationen markiert sind. Außerdem soll die App frei konfigurierbar sein, sprich eigene Kategorien anlegen und die Farben selbst bestimmen um eine noch
         bessere Übersicht zu haben.
       <br>
@@ -139,7 +142,7 @@
 </div>
 <div class="container-fluid py-5" style="background-color:red;">
   <div class="container text-center" style="color:yellow;">Diese Website wurde für das Projekt "Helfende Hand" erstellt und dient nur zu Demonstrationszwecken.<br>
-    Erstellt von Maximiian Kaiser.
+    Erstellt von Maximilian Kaiser.
   </div>
 </div>
 </body>
